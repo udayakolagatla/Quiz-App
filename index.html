@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="container">
+        <div id="welcome">
+            <h1>Welcome to the Quiz App!</h1>
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <button class="Start" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="genre-selection" style="display:none;">
+            <h1>Select a Genre</h1>
+              <button class="math" onclick="startGenre('math')">Math</button>
+              <button class="science" onclick="startGenre('science')">Science</button>
+              <button class="history" onclick="startGenre('history')">History</button>
+        </div>
+
+        <div id="quiz" style="display:none;">
+            <h1>Quiz</h1>
+            <div id="question-container"></div>
+            <div id="result"></div>
+            <div id="timer"></div>
+            <button class="pauseQuiz" onclick="pauseQuiz()">Pause</button>
+            <button class="resumeQuiz" onclick="resumeQuiz()">Resume</button>
+        </div>
+
+        <div id="final" style="display:none;">
+            <h1>Congratulations, <span id="final-username"></span>!</h1>
+            <p>Your Score: <span id="final-score"></span></p>
+            <button class="restartQuiz" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

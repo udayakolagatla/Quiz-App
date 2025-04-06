@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+    background: linear-gradient(270deg, #98c4cc, #cfe0f9);
+    background-size: 400% 400%; /* Large background size for smooth animation */
+    animation: gradient 2s ease infinite; /* Animation for moving gradient */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#container {
+    background: rgb(116, 161, 169); /* Main box background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width */
+}
+
+input{
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px); 
+}
+
+#question-container {
+    margin: 20px 0;
+    border: 1px solid #ccc; /* Border around the question box */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners */
+    background: #fafafa; /* Light background for question box */
+}
+
+#result {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#timer {
+    margin: 10px 0;
+}
+.Start{
+    border-radius:10px;
+    background-color:whitesmoke;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-color: rgb(49, 120, 133);
+    border-style: solid;
+    cursor: pointer;
+}
+.Start:hover{
+    background-color:rgb(170, 196, 200);
+    border-color: antiquewhite;
+}
+.math{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: rgb(240, 246, 244);
+    border-color: rgb(49, 120, 133);
+    border-radius:5px;
+    cursor: pointer;
+}
+.science{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: rgb(240, 246, 244);
+    border-color: rgb(49, 120, 133);
+    border-radius:5px;
+    cursor: pointer;
+}
+.history{
+    cursor: pointer;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: rgb(240, 246, 244);
+    border-color: rgb(49, 120, 133);
+    border-radius:5px;
+}
+.math:hover{
+    background-color: rgb(227, 224, 220);
+}
+.science:hover{
+    background-color: rgb(227, 224, 220);
+}
+.history:hover{
+    background-color: rgb(227, 224, 220);
+}
+.pauseQuiz{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: rgb(240, 246, 244);
+    border-color: rgb(49, 120, 133);
+    border-radius:5px;
+    cursor: pointer;
+}
+.resumeQuiz{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: rgb(240, 246, 244);
+    border-color: rgb(49, 120, 133);
+    border-radius:5px;
+    cursor: pointer;
+}
+.pauseQuiz:hover{
+    background-color: rgb(227, 224, 220);
+}
+.resumeQuiz:hover{
+    background-color: rgb(227, 224, 220);
+}
+.restartQuiz{
+    cursor: pointer;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: rgb(240, 246, 244);
+    border-color: rgb(49, 120, 133);
+    border-radius:5px;
+}
+.restartQuiz:hover{
+    background-color: rgb(227, 224, 220);
+}
+.option {
+    margin-bottom: 10px; /* Adjust the value for more or less space */
+}
+
+
